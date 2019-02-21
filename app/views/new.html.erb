@@ -1,0 +1,17 @@
+<h3>Create a Items</h3>
+<%= form_with model: @item do |form| %>
+    <%= form.text_field :name, placeholder: "name" %>
+    <%= form.text_field :price, placeholder: "price" %>
+    <%= form.text_field :weight, placeholder: "weight" %>
+    <%= form.text_field :description, placeholder: "description" %>
+
+    <%= form.submit %>
+<% end %>
+
+<!-- <%= form_for @item do |form| %>
+    <%= form.text_field :name, placeholder: "name" %>
+    <%= form.text_field :price, placeholder: "price" %>
+    <%= form.text_field :weight, placeholder: "weight" %>
+    <%= form.text_field :description, placeholder: "description" %>
+    <%= form.submit %>
+<% end %> -->
